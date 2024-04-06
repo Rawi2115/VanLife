@@ -6,6 +6,7 @@ export default function Layout(){
         <>
             <Header />
             <Outlet />
+            <footer>&#169; 2022 #VANLIFE</footer>
         </>
     )
 }
