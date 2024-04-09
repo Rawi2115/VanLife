@@ -188,12 +188,12 @@ footer {
 }
 
 .van-tile:hover {
-    transform: scale(1.25);
+    transform: scale(1.15);
     transition: transform 0.25s;
 }
 
 .van-tile {
-    transition: transform 0.25s;
+    transition: transform 0.25s ;
 }
 
 .van-tile a {
