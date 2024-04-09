@@ -429,3 +429,48 @@ i[class*='van-type-'] {
     text-decoration: underline;
     font-weight: 700;
 }
+
+.van-list-filter button {
+    border: 0;
+    color: #4D4D4D;
+    cursor: pointer;
+}
+
+.van-filter-luxury , .van-filter-rugged , .van-filter-simple {
+    background-color: #FFEAD0;
+    padding: 0.5em 0.85em;
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+.van-filter-clear {
+    background-color: white;
+    text-decoration: underline;
+}
+
+.van-filter-simple:hover , .van-filter-simple.selected {
+    background-color: #FF8C38;
+    color:white;
+    transition: 0.25s;
+    transform: scale(1.05);
+}
+
+.van-filter-luxury:hover , .van-filter-luxury.selected {
+    background-color: #161616;
+    color:white;
+    transition: 0.25s;
+    transform: scale(1.05);
+}
+
+.van-filter-rugged:hover , .van-filter-rugged.selected {
+    background-color: #115E59;
+    color: white;
+    transition: 0.25s;
+    transform: scale(1.05);
+}
+
+@media (min-width:800px){
+    .van-list {
+        grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    }
+}
