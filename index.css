@@ -450,6 +450,7 @@ i[class*='van-type-'] {
     padding: 0.5em 0.85em;
     margin-bottom: 1em;
     border-radius: 5px;
+    transition: transform 0.25s;
 }
 
 .van-filter-clear {
@@ -460,21 +461,21 @@ i[class*='van-type-'] {
 .van-filter-simple:hover , .van-filter-simple.selected {
     background-color: #FF8C38;
     color:white;
-    transition: 0.25s;
+    transition: transform 0.25s;
     transform: scale(1.05);
 }
 
 .van-filter-luxury:hover , .van-filter-luxury.selected {
     background-color: #161616;
     color:white;
-    transition: 0.25s;
+    transition: transform 0.25s;
     transform: scale(1.05);
 }
 
 .van-filter-rugged:hover , .van-filter-rugged.selected {
     background-color: #115E59;
     color: white;
-    transition: 0.25s;
+    transition: transform 0.25s;
     transform: scale(1.05);
 }
 
