@@ -480,6 +480,21 @@ i[class*='van-type-'] {
     transform: scale(1.05);
 }
 
+.error-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2.5em;
+    justify-content: center;
+    align-items: center;
+}
+.error-page a {
+    background-color: #151716;
+    color: white;
+    text-decoration: none;
+    padding: 1em 6em;
+    border-radius: 10px;
+}
+
 @media (min-width:800px){
     .van-list {
         grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
@@ -504,6 +519,10 @@ i[class*='van-type-'] {
         justify-content: center;
         gap: 1.85em;
         max-width: 500px;
+    }
+
+    .error-page a {
+        padding: 1em 10em;
     }
 }
 @media (min-width:950px){
