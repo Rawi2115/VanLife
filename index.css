@@ -101,6 +101,7 @@ footer {
     min-height: 350px;
     color: white;
     padding: 45px 23px;
+    flex-grow: 1;
 }
 
 .home-container h1 {
@@ -483,5 +484,42 @@ i[class*='van-type-'] {
     .van-list {
         grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
         margin-left: 1em;
+    }
+    .van-detail {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 1.5em;
+        margin-top: 2em;
+        justify-content: center;
+    }
+    .van-detail img {
+        max-width: 25%;
+        margin-block:0 ;
+    }
+    .van-detail-tyopgrahy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1.85em;
+        max-width: 500px;
+    }
+}
+@media (min-width:950px){
+    .home-container {
+        padding: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .home-container a{
+        max-width: 300px;
+    }
+    .home-container h1{
+        font-size: 2.5rem;
+    }
+    .home-container p{
+        font-size: 1.05rem;
     }
 }
