@@ -1,10 +1,9 @@
 import React from "react"
-import {useOutletContext} from "react-router-dom"
+import { useOutletContext } from "react-router-dom"
+
 export default function HostVanPricing() {
-    const van = useOutletContext()
+    const { currentVan } = useOutletContext()
     return (
-        <section>
-            <h3 style={{fontWeight:"bold"}}>$60<span style={{fontWeight:"400",fontSize:"16px"}}>/day</span></h3>
-        </section>
+        <h3 className="host-van-price">${currentVan.price}<span style={{fontSize:"14px",color:"#4D4D4D"}}>/day</span></h3>
     )
 }

@@ -1,5 +1,6 @@
 import React from "react"
 import {NavLink,Link} from "react-router-dom"
+import { RxAvatar } from "react-icons/rx";
 
 export default function Header(){
     const activeStyle = {
@@ -10,10 +11,11 @@ export default function Header(){
     return(
         <header>
         <Link className="site-logo" to="/">#VanLife</Link>
-        <nav>
+        <nav className="header-nav">
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/host" end>Host</NavLink>
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/about">About</NavLink>
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/vans">Vans</NavLink>
+          <Link className="avatar-header-icon" to="/login"><RxAvatar/></Link>
         </nav>
         </header>
     )
