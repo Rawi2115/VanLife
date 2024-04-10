@@ -550,6 +550,9 @@ i[class*='van-type-'] {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+.login-status {
+    color: red;
+}
 /*Login section*/
 
 @media (min-width:800px){

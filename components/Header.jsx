@@ -8,6 +8,10 @@ export default function Header(){
       textDecoration:"underline",
       color:"black"
     }
+    function fakeLogOut(){
+      localStorage.removeItem("loggedin")
+      window.location.reload(false)
+    }
     return(
         <header>
         <Link className="site-logo" to="/">#VanLife</Link>
@@ -16,6 +20,7 @@ export default function Header(){
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/about">About</NavLink>
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/vans">Vans</NavLink>
           <Link className="avatar-header-icon" to="/login"><RxAvatar/></Link>
+          <button onClick={fakeLogOut}>X</button>
         </nav>
         </header>
     )
