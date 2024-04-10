@@ -539,6 +539,9 @@ i[class*='van-type-'] {
 .login-form input {
     border: 1px solid #D1D5DB;
 }
+.login-form input:focus {
+    outline: 0;
+}
 #email {
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
