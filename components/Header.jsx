@@ -20,7 +20,7 @@ export default function Header(){
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/about">About</NavLink>
           <NavLink style={({isActive})=> isActive ? activeStyle : null} to="/vans">Vans</NavLink>
           <Link className="avatar-header-icon" to="/login"><RxAvatar/></Link>
-          <button onClick={fakeLogOut}>X</button>
+          <button style={{border:"none",backgroundColor:"inherit",fontFamily:"inherit",cursor:"pointer"}} onClick={fakeLogOut}>Log out</button>
         </nav>
         </header>
     )
